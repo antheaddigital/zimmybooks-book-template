@@ -1,0 +1,19 @@
+.img-responsive { display: block; height: auto; max-width: 100%; }
+
+body, html { overflow: hidden; }
+
+.wrapper {
+  text-align: center;
+}
+
+.slider {
+  margin: 0 auto;
+}
+
+.slider-page {
+  position: relative;
+}
+
+.sign-link {
+  position: absolute;
+}
