@@ -2,6 +2,11 @@
 
 body, html { overflow: hidden; }
 
+body {
+  background-image: url('../imgs/background/background-02.jpg');
+  background-repeat: repeat;
+}
+
 .wrapper {
   text-align: center;
 }
@@ -39,4 +44,15 @@ body, html { overflow: hidden; }
 
 .sign-link {
   position: absolute;
+}
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+  font-size: 50px;
+  width: 40px;
+  height: 40px;
+  top: 45px;
+  right: 5px;
+  text-align: center;
+  padding-right: 0;
+  background-color: #757575;
 }
