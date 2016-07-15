@@ -55,4 +55,5 @@ body {
   text-align: center;
   padding-right: 0;
   background-color: #757575;
+  cursor: pointer !important;
 }
