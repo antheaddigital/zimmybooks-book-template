@@ -45,6 +45,9 @@ body {
 .sign-link {
   position: absolute;
 }
+.sign-link:focus {
+  outline: none;
+}
 
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
   font-size: 50px;
