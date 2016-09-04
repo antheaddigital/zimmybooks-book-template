@@ -62,23 +62,28 @@ All images should be jpg's (png's have larger file sizes than jpg's).
 
 Example of slide with sign:
 
-```<div class="slider-page">
-  <img src="imgs/pages/01.jpg" class="page-img img-responsive" />
-  <a href="imgs/signs/broken.jpg" class="sign-link"><img src="imgs/signboxes/broken.jpg" class="img-responsive" /></a>
-</div>```
+```
+  <div class="slider-page">
+    <img src="imgs/pages/01.jpg" class="page-img img-responsive" />
+    <a href="imgs/signs/broken.jpg" class="sign-link"><img src="imgs/signboxes/broken.jpg" class="img-responsive" /></a>
+  </div>
+```
 
 Example of slide without sign:
 
-```<div class="slider-page">
-  <img src="imgs/pages/intro.jpg" class="page-img img-responsive" />
-</div>
 ```
-
-### 4. Admob setup
+  <div class="slider-page">
+    <img src="imgs/pages/intro.jpg" class="page-img img-responsive" />
+  </div>
+```
 
 ---
 
-### 5. Piwik setup
+### 5. Admob setup
+
+---
+
+### 6. Piwik setup
 
 ---
 
