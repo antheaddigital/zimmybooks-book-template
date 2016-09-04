@@ -20,14 +20,16 @@
 
 ### 2. Environment
 
-The /js/environment.js file has the value for the environment.
+The /js/environment.js file has the value for the environment. Set value for: window.appEnvironment.
 
-The two environments are "production" and "staging".
+The two different environments values are "production" and "staging":
 
   * "production" is on the master branch
   * "staging" is on the staging branch
 
-This setting, and these exact values, are related to the Admob ad service. These exact values must be in the correct branch.
+These exact values must be in the correct branch.
+
+This setting is used in the settings for the Admob ad service and Piwik tracking. On staging, the Admob services is going to display a test ad, and Piwik tracking is going to effect the test tracking account.
 
 ---
 
@@ -50,7 +52,7 @@ Naming scheme for pages:
 
   * intro: intro.jpg
   * title: title.jpg
-  * page: [number].jpg
+  * page: [story page number].jpg
   * credits: credits.jpg
   * the end: the-end.jpg
 
@@ -60,7 +62,15 @@ All images should be jpg's (png's have larger file sizes than jpg's).
 
 ### 4. Slider html
 
-Example of slide with sign:
+Example of intro page:
+
+```
+  <div class="slider-page">
+    <img src="imgs/pages/intro.jpg" class="page-img img-responsive" />
+  </div>
+```
+
+Example of slide with sign (notice the file name of the page: [story page number].jpg):
 
 ```
   <div class="slider-page">
@@ -69,25 +79,49 @@ Example of slide with sign:
   </div>
 ```
 
-Example of slide without sign:
+Example of credit page:
 
 ```
   <div class="slider-page">
-    <img src="imgs/pages/intro.jpg" class="page-img img-responsive" />
+    <img src="imgs/pages/credits.jpg" class="page-img img-responsive" />
+  </div>
+```
+
+Example of end page:
+
+```
+  <div class="slider-page">
+    <img src="imgs/pages/the-end.jpg" class="page-img img-responsive" />
   </div>
 ```
 
 ---
 
-### 5. Admob setup
+### 5. Set ad pop up page:
+
+This step is for setting the page that the Admob ad will pop up on.
+
+1. Open file: /js/settings.js
+2. Set the value of: window.appSettings.creditsSlide, as the page number of the credits page.
+
+The first page of the book, usually the intro page, is considered slide 0(zero). When testing, make sure the ad pops up when the user gets to the credit page.
+
+In theory, any page can act as the the page that the ad pops up on, but for usability purposes the plan is to have the ad pop up after the user finishes the story and gets to the credits page.
 
 ---
 
-### 6. Piwik setup
+### 6. Admob setup
+
+---
+
+### 7. Piwik setup
 
 ---
 
 ### Final points
-* JS file that you should not touch:
+* There is no reason to edit these CSS files:
+  * /css/main.css
+  * /css/reset.css
+* Do not edit these JS files:
   * /js/config.js
   * /js/main.js
