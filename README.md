@@ -20,7 +20,7 @@
 
 ### 2. Environment
 
-The /js/environment.js file has the value for the environment. Set value for: window.appEnvironment.
+The /js/environment.js file has the value for the environment. Set value for: ``` window.appEnvironment ```.
 
 The two different environments values are "production" and "staging":
 
@@ -102,7 +102,7 @@ Example of end page:
 This step is for setting the page that the Admob ad will pop up on.
 
 1. Open file: /js/settings.js
-2. Set the value of: window.appSettings.creditsSlide, as the page number of the credits page.
+2. Set the value of: ``` window.appSettings.creditsSlide ```, as the page number of the credits page.
 
 The first page of the book, usually the intro page, is considered slide 0(zero). When testing, make sure the ad pops up when the user gets to the credit page.
 
@@ -111,6 +111,24 @@ In theory, any page can act as the the page that the ad pops up on, but for usab
 ---
 
 ### 6. Admob setup
+
+Setting up Admob is a 2 step process.
+
+#### 1. Create the ad units in the Admob admin
+
+  1. Log into the Anthead Digital Admob account.
+  2. On the Monetize tab, click on the "+ Monetize New App" button.
+  3. On the "Monetize a new app" page, select these option for each step:
+    1. Select an app
+      * On the "Add Your App Manually" tab
+
+
+#### 2. Apply the ad unit id's to the settings.js file
+
+
+```
+  window.appSettings
+```
 
 ---
 
